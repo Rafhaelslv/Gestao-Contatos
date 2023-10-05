@@ -1,18 +1,24 @@
-## Getting Started
+## Gestão de Contato
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Objetivo: Crie um programa Java para gerenciar uma lista de contatos. 
+O programa deve permitir a criação, remoção, atualização, exibição e listagem de contatos, além de incluir um menu para facilitar a interação do usuário.
 
-## Folder Structure
+Instruções:
 
-The workspace contains two folders by default, where:
+Crie uma classe chamada Contato com os seguintes atributos: nome, telefone e email.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Crie uma classe chamada GerenciadorDeContatos que conterá uma matriz de contatos.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Implemente os seguintes métodos públicos na classe GerenciadorDeContatos:
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+a. criarContato(): Este método deve permitir ao usuário criar um novo contato. Peça ao usuário para inserir o nome, telefone e email do contato e adicione-o à matriz de contatos.
 
-## Dependency Management
+b. removerContato(): Este método deve permitir ao usuário remover um contato existente da lista. Peça ao usuário para inserir o nome do contato que deseja remover e encontre-o na matriz para removê-lo.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+c. atualizarContato(): Este método deve permitir ao usuário atualizar as informações de um contato existente. Peça ao usuário para inserir o nome do contato que deseja atualizar e, em seguida, solicite que ele forneça as novas informações (nome, telefone e email) para atualização.
+
+d. exibirContato(): Este método deve permitir ao usuário exibir as informações de um contato específico. Peça ao usuário para inserir o nome do contato que deseja exibir e mostre suas informações.
+
+e. listarContatos(): Este método deve exibir a lista completa de contatos armazenados.
+
+Crie um método main para testar seu programa. Dentro do método main, implemente um menu de seleção que permita ao usuário escolher entre as operações (criar, remover, atualizar, exibir ou listar contatos) e continue exibindo o menu até que o usuário opte por sair do programa.
